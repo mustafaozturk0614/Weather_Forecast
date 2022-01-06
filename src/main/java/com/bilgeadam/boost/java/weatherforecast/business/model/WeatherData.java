@@ -21,7 +21,7 @@ import lombok.ToString;
 @Table(name = "weather_data")
 public class WeatherData {
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long oid;
 	@Temporal(TemporalType.DATE)
 	private Date timestamp;

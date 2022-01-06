@@ -24,7 +24,7 @@ import lombok.ToString;
 @Table(name = "country")
 public class Country {
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long oid;
 	private String name;
 	private String code;
